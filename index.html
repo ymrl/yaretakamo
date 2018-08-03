@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fudas {
+            font-size: 120px;
+            margin: 0.5em;
+            margin-left: 50%;
+            -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+        }
+
+        .fuda {
+            font-weight: bolder;
+            line-height: 1;
+        }
+
+        .yaretatohaienai {
+            color: #ff0000;
+        }
+    </style>
+    <meta name="viewport" content="width=480">
+</head>
+
+<body>
+    <div class="fudas">
+        <div class="fuda yareta">やれた</div>
+        <div class="fuda yaretatohaienai" style="display: none">やれたとは
+            <br />言えない</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $('.fuda').click(function () {
+            $('.fuda').toggle()
+        })
+    </script>
+
+</body>
+
+</html>
